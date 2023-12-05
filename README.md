@@ -1,2 +1,2 @@
-# IconHoverEffect
-CSS - Icons Hover Effect
+# FlashLightEffect
+Flash Light Effect
