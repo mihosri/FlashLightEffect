@@ -18,7 +18,10 @@ function getMousePosition(e)
     mouseX = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
     mouseY = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
 
-    flashlight.style.setProperty("--Xpos". mouseX + "px");
-    flashlight.style.setProperty('--Ypos'.mouseY + 'px');
+    flashlight.style.setProperty("--Xpos", mouseX + "px");
+    flashlight.style.setProperty("--Ypos", mouseY + "px");
     
 }
+
+document.addEventListener("mousemove", getMousePosition);
+document.addEventListener("touchmove", getMousePosition);
